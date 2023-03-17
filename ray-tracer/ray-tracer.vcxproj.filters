@@ -6,7 +6,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cc">
+    <ClCompile Include="main.cpp">
       <Filter>RayTracer</Filter>
     </ClCompile>
   </ItemGroup>
