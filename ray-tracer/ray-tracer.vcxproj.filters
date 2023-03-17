@@ -4,10 +4,30 @@
     <Filter Include="RayTracer">
       <UniqueIdentifier>{5d738fbd-cab7-448e-9021-044d1fe4454e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RayTracer\vec3">
+      <UniqueIdentifier>{39c54bad-c112-4c10-81f8-89baf1edb610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer\color">
+      <UniqueIdentifier>{a9d5494d-b02b-44c9-a833-f42aed33e387}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>RayTracer</Filter>
     </ClCompile>
+    <ClCompile Include="vec3.cpp">
+      <Filter>RayTracer\vec3</Filter>
+    </ClCompile>
+    <ClCompile Include="color.cpp">
+      <Filter>RayTracer\color</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vec3.h">
+      <Filter>RayTracer\vec3</Filter>
+    </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>RayTracer\color</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
