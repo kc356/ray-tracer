@@ -8,7 +8,6 @@ class vec3
 public:
 	vec3();
 	vec3(double e0, double e1, double e2);
-	~vec3();
 public:
 	double x() const;
 	double y() const;

@@ -8,10 +8,6 @@ vec3::vec3(double e0, double e1, double e2) : e{ e0, e1, e2 }
 {
 }
 
-vec3::~vec3()
-{
-}
-
 double vec3::x() const
 {
 	return e[0];
