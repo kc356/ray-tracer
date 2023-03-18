@@ -39,6 +39,7 @@
     <ClCompile Include="hittable_list.cpp">
       <Filter>RayTracer\hittable</Filter>
     </ClCompile>
+    <ClCompile Include="camera.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vec3.h">
@@ -62,5 +63,6 @@
     <ClInclude Include="math_util.h">
       <Filter>RayTracer\util</Filter>
     </ClInclude>
+    <ClInclude Include="camera.h" />
   </ItemGroup>
 </Project>
