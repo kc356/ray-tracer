@@ -16,6 +16,9 @@
     <Filter Include="RayTracer\hittable">
       <UniqueIdentifier>{0a6f3e24-60d5-48cc-975c-23858d7eccc9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RayTracer\util">
+      <UniqueIdentifier>{bc867a62-4801-4bcf-8da3-ace415911ea0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -31,6 +34,9 @@
       <Filter>RayTracer\ray</Filter>
     </ClCompile>
     <ClCompile Include="sphere.cpp">
+      <Filter>RayTracer\hittable</Filter>
+    </ClCompile>
+    <ClCompile Include="hittable_list.cpp">
       <Filter>RayTracer\hittable</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,6 +55,12 @@
     </ClInclude>
     <ClInclude Include="sphere.h">
       <Filter>RayTracer\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="hittable_list.h">
+      <Filter>RayTracer\hittable</Filter>
+    </ClInclude>
+    <ClInclude Include="math_util.h">
+      <Filter>RayTracer\util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

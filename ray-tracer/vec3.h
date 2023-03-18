@@ -8,21 +8,21 @@ class vec3
 public:
 	vec3();
 	vec3(double e0, double e1, double e2);
-public:
+
 	double x() const;
 	double y() const;
 	double z() const;
-public:
+
 	vec3 operator-() const;
 	double operator[](int i) const;
 	double& operator[](int i);
 	vec3& operator+=(const vec3& v);
 	vec3& operator*=(const double t);
 	vec3& operator/=(const double t);
-public:
+
 	double length() const;
 	double length_squared() const;
-public:
+
 	double e[3];
 };
 

@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="color.cpp" />
+    <ClCompile Include="hittable_list.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ray.cpp" />
     <ClCompile Include="sphere.cpp" />
@@ -136,6 +137,8 @@
   <ItemGroup>
     <ClInclude Include="color.h" />
     <ClInclude Include="hittable.h" />
+    <ClInclude Include="hittable_list.h" />
+    <ClInclude Include="math_util.h" />
     <ClInclude Include="ray.h" />
     <ClInclude Include="sphere.h" />
     <ClInclude Include="vec3.h" />
