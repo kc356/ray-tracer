@@ -78,4 +78,6 @@ inline vec3 unit_vector(vec3 v) {
 	return v / v.length();
 }
 
-vec3 random_in_unit_sphere();
+inline vec3 random_in_unit_sphere();
+
+vec3 random_unit_vector();
