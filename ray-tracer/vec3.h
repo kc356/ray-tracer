@@ -8,29 +8,33 @@ class vec3
 public:
 	vec3();
 	vec3(double e0, double e1, double e2);
-
+public:
 	double x() const;
 	double y() const;
 	double z() const;
-
+public:
 	vec3 operator-() const;
 	double operator[](int i) const;
 	double& operator[](int i);
 	vec3& operator+=(const vec3& v);
 	vec3& operator*=(const double t);
 	vec3& operator/=(const double t);
-
+public:
 	double length() const;
 	double length_squared() const;
-
+public:
+	inline static vec3 random();
+	inline static vec3 random(double min, double max);
+public:
 	double e[3];
 };
 
 using point3 = vec3;   // 3D point
 using color = vec3;    // RGB color
-using std::sqrt;
+using namespace std;
 
-inline std::ostream& operator<<(std::ostream& out, const vec3& v) {
+
+inline ostream& operator<<(ostream& out, const vec3& v) {
 	return out << v.e[0] << ' ' << v.e[1] << ' ' << v.e[2];
 }
 
@@ -73,3 +77,5 @@ inline vec3 cross(const vec3& u, const vec3& v) {
 inline vec3 unit_vector(vec3 v) {
 	return v / v.length();
 }
+
+vec3 random_in_unit_sphere();

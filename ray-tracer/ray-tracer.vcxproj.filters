@@ -19,6 +19,9 @@
     <Filter Include="RayTracer\util">
       <UniqueIdentifier>{bc867a62-4801-4bcf-8da3-ace415911ea0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RayTracer\camera">
+      <UniqueIdentifier>{2eb031c6-51db-4ca3-b97a-a28374b050c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -39,7 +42,9 @@
     <ClCompile Include="hittable_list.cpp">
       <Filter>RayTracer\hittable</Filter>
     </ClCompile>
-    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="camera.cpp">
+      <Filter>RayTracer\camera</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vec3.h">
@@ -63,6 +68,8 @@
     <ClInclude Include="math_util.h">
       <Filter>RayTracer\util</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h" />
+    <ClInclude Include="camera.h">
+      <Filter>RayTracer\camera</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
