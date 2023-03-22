@@ -22,6 +22,9 @@
     <Filter Include="RayTracer\camera">
       <UniqueIdentifier>{2eb031c6-51db-4ca3-b97a-a28374b050c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RayTracer\material">
+      <UniqueIdentifier>{565a3bf9-c1bf-44a7-b4c1-fa9939cddb03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,6 +47,12 @@
     </ClCompile>
     <ClCompile Include="camera.cpp">
       <Filter>RayTracer\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="lambertian.cpp">
+      <Filter>RayTracer\material</Filter>
+    </ClCompile>
+    <ClCompile Include="metal.cpp">
+      <Filter>RayTracer\material</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +79,15 @@
     </ClInclude>
     <ClInclude Include="camera.h">
       <Filter>RayTracer\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>RayTracer\material</Filter>
+    </ClInclude>
+    <ClInclude Include="lambertian.h">
+      <Filter>RayTracer\material</Filter>
+    </ClInclude>
+    <ClInclude Include="metal.h">
+      <Filter>RayTracer\material</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
