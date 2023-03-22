@@ -7,12 +7,6 @@
     <Filter Include="RayTracer\vec3">
       <UniqueIdentifier>{39c54bad-c112-4c10-81f8-89baf1edb610}</UniqueIdentifier>
     </Filter>
-    <Filter Include="RayTracer\color">
-      <UniqueIdentifier>{a9d5494d-b02b-44c9-a833-f42aed33e387}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="RayTracer\ray">
-      <UniqueIdentifier>{75ab7237-1aee-4b03-bb5f-8aba36e5e121}</UniqueIdentifier>
-    </Filter>
     <Filter Include="RayTracer\hittable">
       <UniqueIdentifier>{0a6f3e24-60d5-48cc-975c-23858d7eccc9}</UniqueIdentifier>
     </Filter>
@@ -22,8 +16,20 @@
     <Filter Include="RayTracer\camera">
       <UniqueIdentifier>{2eb031c6-51db-4ca3-b97a-a28374b050c0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="RayTracer\material">
+    <Filter Include="RayTracer\hittable\shape">
+      <UniqueIdentifier>{31694cb4-bdba-4ae1-ae0f-edbb98060145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer\vec3\color">
+      <UniqueIdentifier>{a9d5494d-b02b-44c9-a833-f42aed33e387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer\vec3\ray">
+      <UniqueIdentifier>{75ab7237-1aee-4b03-bb5f-8aba36e5e121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer\hittable\material">
       <UniqueIdentifier>{565a3bf9-c1bf-44a7-b4c1-fa9939cddb03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer\hittable\material\surface">
+      <UniqueIdentifier>{57550046-476c-4233-9e15-a0b153b524c4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,13 +40,10 @@
       <Filter>RayTracer\vec3</Filter>
     </ClCompile>
     <ClCompile Include="color.cpp">
-      <Filter>RayTracer\color</Filter>
+      <Filter>RayTracer\vec3\color</Filter>
     </ClCompile>
     <ClCompile Include="ray.cpp">
-      <Filter>RayTracer\ray</Filter>
-    </ClCompile>
-    <ClCompile Include="sphere.cpp">
-      <Filter>RayTracer\hittable</Filter>
+      <Filter>RayTracer\vec3\ray</Filter>
     </ClCompile>
     <ClCompile Include="hittable_list.cpp">
       <Filter>RayTracer\hittable</Filter>
@@ -48,11 +51,14 @@
     <ClCompile Include="camera.cpp">
       <Filter>RayTracer\camera</Filter>
     </ClCompile>
-    <ClCompile Include="lambertian.cpp">
-      <Filter>RayTracer\material</Filter>
-    </ClCompile>
     <ClCompile Include="metal.cpp">
-      <Filter>RayTracer\material</Filter>
+      <Filter>RayTracer\hittable\material</Filter>
+    </ClCompile>
+    <ClCompile Include="lambertian.cpp">
+      <Filter>RayTracer\hittable\material\surface</Filter>
+    </ClCompile>
+    <ClCompile Include="sphere.cpp">
+      <Filter>RayTracer\hittable\shape</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -60,15 +66,12 @@
       <Filter>RayTracer\vec3</Filter>
     </ClInclude>
     <ClInclude Include="color.h">
-      <Filter>RayTracer\color</Filter>
+      <Filter>RayTracer\vec3\color</Filter>
     </ClInclude>
     <ClInclude Include="ray.h">
-      <Filter>RayTracer\ray</Filter>
+      <Filter>RayTracer\vec3\ray</Filter>
     </ClInclude>
     <ClInclude Include="hittable.h">
-      <Filter>RayTracer\hittable</Filter>
-    </ClInclude>
-    <ClInclude Include="sphere.h">
       <Filter>RayTracer\hittable</Filter>
     </ClInclude>
     <ClInclude Include="hittable_list.h">
@@ -81,13 +84,16 @@
       <Filter>RayTracer\camera</Filter>
     </ClInclude>
     <ClInclude Include="material.h">
-      <Filter>RayTracer\material</Filter>
-    </ClInclude>
-    <ClInclude Include="lambertian.h">
-      <Filter>RayTracer\material</Filter>
+      <Filter>RayTracer\hittable\material</Filter>
     </ClInclude>
     <ClInclude Include="metal.h">
-      <Filter>RayTracer\material</Filter>
+      <Filter>RayTracer\hittable\material</Filter>
+    </ClInclude>
+    <ClInclude Include="lambertian.h">
+      <Filter>RayTracer\hittable\material\surface</Filter>
+    </ClInclude>
+    <ClInclude Include="sphere.h">
+      <Filter>RayTracer\hittable\shape</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
